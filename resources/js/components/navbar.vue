@@ -1,15 +1,15 @@
 <template>
-    <div class="border-bottom">
+    <div class="nav-bar bg-light border-bottom">
         <div class="container">
             <div class="navbar align-items-center">
                 <div class="logo-holder me-lg-auto">
-                    <img src="../../assets/images/creativity-full.png" height="70px" width="auto">
+                    <img src="../../assets/images/logo.png" height="100px" width="auto">
                 </div>
                 <nav class="nav-menu d-flex">
                     <a href="#home" class="nav-link p-3" :class="{ active: isActive('#home') }">HOME</a>
                     <a href="#contact" class="nav-link p-3" :class="{ active: isActive('#contact') }">CONTACT US</a>
-                    <a href="#order" class="nav-link p-3 bg-blue text-white" :class="{ active: isActive('#order') }">BUY
-                        NOW</a>
+                    <!-- <a href="#order" class="nav-link p-3 bg-blue text-white" :class="{ active: isActive('#order') }">BUY
+                        NOW</a> -->
                 </nav>
             </div>
         </div>
@@ -42,6 +42,12 @@ export default {
 </script>
 
 <style scoped>
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .logo-holder {
     margin-right: 10px;
 }

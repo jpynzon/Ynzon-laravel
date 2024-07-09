@@ -1,8 +1,61 @@
 <template>
     <div id="contact">
         <div class="contacts-area bg-dark py-5">
-            <div class="container text-center">
-                <h1 class="area-title text-white fw-bold mb-4">CONTACT</h1>
+            <div class="container d-flex flex-column align-items-center">
+                <h6 class="title fw-bold text-white mb-3">#GET IN TOUCH WITH US</h6>
+                <h2 class="title text-white fw-bold mb-4">Have a project in mind? We can help you!</h2>
+                <h6 class="desc text-white">Request for a quotation or schedule a discovery meeting with us to to know
+                    more about
+                    our pricing and how we can help you.
+                </h6>
+
+                <div class="form mt-5 d-flex align-items-center flex-wrap">
+                    <div class="left me-lg-5">
+                        <img src="../../assets/images/man.png" width="500px">
+                    </div>
+                    <div class="right">
+                        <span class="desc text-white">Want to know more about our pricing? Request it today!</span>
+                        <div class="form-group my-5">
+                            <input type="text" class="form-control mb-3 rounded-0 p-3" name="" id=""
+                                aria-describedby="emailHelpId" placeholder="Full Name*">
+                            <input type="email" class="form-control mb-3 rounded-0 p-3" name="" id=""
+                                aria-describedby="emailHelpId" placeholder="Email*">
+                            <input type="number" class="form-control mb-3 rounded-0 p-3" name="" id=""
+                                aria-describedby="emailHelpId" placeholder="Mobile Number*">
+                        </div>
+
+                        <span class="desc text-white">I Need Help With The Following Service/s *</span>
+
+                        <div class="form-check mb-5 mt-3">
+                            <label class="form-check-label text-white">
+                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                                Web Development
+                            </label>
+                            <label class="form-check-label text-white mx-5">
+                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                                Mobile Development
+                            </label>
+                            <label class="form-check-label text-white">
+                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                                Project Management
+                            </label>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="" class="text-white mb-3">Project Brief*</label>
+                            <textarea class="form-control rounded-0" name="" id="" rows="3"></textarea>
+                        </div>
+
+                        <small class="desc text-white">By proceeding, you confirm that you have read and agree to our
+                            Privacy Notice.</small>
+                        <br>
+                        <button type="button" class="btn btn-primary rounded-5 mt-3 mb-5">SUBMIT REQUEST</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center mt-5">
+                <h1 class="area-title text-white fw-bold my-4">CONTACT</h1>
                 <div class="cards d-flex flex-wrap justify-content-center">
                     <div
                         class="card bg-transparent border-0 text-white my-3 mx-5 d-flex flex-column align-items-center">
