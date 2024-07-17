@@ -1,17 +1,17 @@
 <template>
     <div class="nav-bar bg-light border-bottom">
-        <div class="container">
-            <div class="navbar align-items-center">
-                <div class="logo-holder me-lg-auto">
-                    <img src="../../assets/images/logo.png" height="100px" width="auto">
-                </div>
-                <nav class="nav-menu d-flex">
-                    <a href="#home" class="nav-link p-3" :class="{ active: isActive('#home') }">HOME</a>
-                    <a href="#contact" class="nav-link p-3" :class="{ active: isActive('#contact') }">CONTACT US</a>
-                    <!-- <a href="#order" class="nav-link p-3 bg-blue text-white" :class="{ active: isActive('#order') }">BUY
-                        NOW</a> -->
-                </nav>
+        <div class="navbar container align-items-center">
+            <div class="logo-holder me-lg-auto">
+                <img id="logoImage" src="../../assets/images/logo.png" :style="logoStyle">
             </div>
+            <nav class="nav-menu d-flex">
+                <router-link to="/" class="nav-link p-3" :class="{ active: isActive('/') }">HOME</router-link>
+                <router-link to="/order" class="nav-link p-3"
+                    :class="{ active: isActive('/order') }">SERVICES</router-link>
+                <router-link to="/contact" class="nav-link p-3"
+                    :class="{ active: isActive('/contact') }">CONTACT</router-link>
+                <router-link to="/login" class="nav-link p-3 bg-blue text-white">JOIN NOW</router-link>
+            </nav>
         </div>
     </div>
 </template>
@@ -21,23 +21,36 @@ export default {
     name: 'Navbar',
     data() {
         return {
-            currentHash: window.location.hash,
-        };
+            logoHeight: 80
+        }
+    },
+    computed: {
+        logoStyle() {
+            return {
+                height: this.logoHeight + 'px',
+                width: 'auto',
+                transition: 'height 0.3s'
+            }
+        }
     },
     methods: {
-        isActive(hash) {
-            return this.currentHash === hash;
+        isActive(path) {
+            return this.$route.path === path;
         },
-        updateHash() {
-            this.currentHash = window.location.hash;
-        },
+        handleScroll() {
+            if (window.scrollY > 0) {
+                this.logoHeight = 60;
+            } else {
+                this.logoHeight = 80;
+            }
+        }
     },
-    created() {
-        window.addEventListener('hashchange', this.updateHash);
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
     },
-    beforeUnmount() {
-        window.removeEventListener('hashchange', this.updateHash);
-    },
+    unmounted() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
 };
 </script>
 
@@ -46,10 +59,6 @@ export default {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.logo-holder {
-    margin-right: 10px;
 }
 
 .active {

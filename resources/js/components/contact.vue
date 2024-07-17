@@ -11,7 +11,7 @@
 
                 <div class="form mt-5 d-flex align-items-center flex-wrap">
                     <div class="left me-lg-5">
-                        <img src="../../assets/images/man.png" width="500px">
+                        <img src="../../assets/images/man.png" style="max-width: 500px;" class="w-100">
                     </div>
                     <div class="right">
                         <span class="desc text-white">Want to know more about our pricing? Request it today!</span>
@@ -49,7 +49,7 @@
                         <small class="desc text-white">By proceeding, you confirm that you have read and agree to our
                             Privacy Notice.</small>
                         <br>
-                        <button type="button" class="btn btn-primary rounded-5 mt-3 mb-5">SUBMIT REQUEST</button>
+                        <button type="button" class="btn btn-primary rounded-0 mt-3 mb-5">SUBMIT REQUEST</button>
                     </div>
                 </div>
             </div>

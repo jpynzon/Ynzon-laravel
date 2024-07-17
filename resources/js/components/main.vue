@@ -4,20 +4,14 @@
             <div class="container d-flex flex-wrap align-items-center justify-content-center">
                 <div class="left-group me-lg-5">
                     <h1 class="area-title fw-bold mb-3">From Vision to Code:<br> Creativity Unleashed.</h1>
-                    <a href="#about" class="btn btn-primary rounded-5 border-0 px-3 py-2">LEARN MORE</a>
+                    <a href="#about" class="btn btn-primary rounded-0 bg-blue border-0 px-3 py-2">LEARN MORE</a>
                 </div>
                 <div class="right-group">
-                    <img src="../../assets/images/hero.png" width="500px">
+                    <img src="../../assets/images/hero.png" style="max-width: 500px;" class="w-100">
                 </div>
             </div>
         </div>
     </div>
-
-    <!--  <div id="about" class="media-area d-flex justify-content-center">
-        <video id="myVideo" preload="metadata" autoplay loop height="500px">
-            <source src="../../assets/images/creativity.mp4#t=1.75" type="video/mp4">
-        </video>
-    </div> -->
 
     <div class="company-area py-5 d-flex flex-column align-items-center text-center">
         <h6 class="compay-title fw-bold">#COMPANIES WHO TRUST US</h6>
@@ -41,7 +35,7 @@
                     exceeds your expectations.</h6>
             </div>
             <div class="right">
-                <img src="../../assets/images/girl.png" height="400px">
+                <img src="../../assets/images/girl.png" style="max-height: 800px;" class="w-100">
             </div>
         </div>
     </div>
@@ -71,25 +65,4 @@ document.addEventListener('DOMContentLoaded', function () {
         flex-wrap: wrap;
     }
 }
-
-/* #myVideo {
-    width: 100%;
-    height: 500px;
-}
-
-#myVideo::-webkit-media-controls {
-    display: none !important;
-}
-
-#myVideo::-webkit-media-controls-enclosure {
-    display: none !important;
-}
-
-#myVideo::-webkit-media-controls-panel {
-    display: none !important;
-}
-
-#myVideo:hover {
-    cursor: pointer;
-} */
 </style>

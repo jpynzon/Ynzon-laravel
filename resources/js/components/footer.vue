@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="container py-3 d-flex align-items-center">
             <div class="left d-flex flex-column me-lg-auto">
-                <img src="../../assets/images/logo.png" width="150px">
+                <img src="../../assets/images/logo.png" style="max-width: 150px;" class="w-100">
                 <span class="text-secondary">Creativity &copy 2024 All rights reserved.
                 </span>
             </div>
