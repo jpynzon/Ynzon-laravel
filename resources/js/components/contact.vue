@@ -49,7 +49,8 @@
                         <small class="desc text-white">By proceeding, you confirm that you have read and agree to our
                             Privacy Notice.</small>
                         <br>
-                        <button type="button" class="btn btn-primary rounded-0 mt-3 mb-5">SUBMIT REQUEST</button>
+                        <button type="button" class="btn btn-primary text-white rounded-0 mt-3 mb-5">SUBMIT
+                            REQUEST</button>
                     </div>
                 </div>
             </div>

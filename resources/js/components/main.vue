@@ -17,17 +17,18 @@
         <h6 class="compay-title fw-bold">#COMPANIES WHO TRUST US</h6>
         <div class="companies d-flex justify-content-center flex-wrap mt-3">
             <img src="../../assets/images/company1.png" alt="PASSAFUND" class="mx-3" height="100px">
-            <img src="../../assets/images/company2.png" alt="PASSAFUND" class="mx-3" height="100px">
-            <img src="../../assets/images/company3.png" alt="PASSAFUND" class="mx-3" height="100px">
-            <img src="../../assets/images/company4.png" alt="PASSAFUND" class="mx-3" height="100px">
+            <img src="../../assets/images/company2.png" alt="CCTC" class="mx-3" height="100px">
+            <img src="../../assets/images/company3.png" alt="META" class="mx-3" height="100px">
+            <img src="../../assets/images/company4.png" alt="GOOGLE" class="mx-3" height="100px">
         </div>
     </div>
 
-    <div id="about">
+    <div id="about" class="bg-dark">
         <div class="about-area py-5 container d-flex justify-content-center align-items-center">
             <div class="left">
-                <h2 class="about-title fw-bold mb-3">A Website that Fits Your Business</h2>
-                <h6 class="desc" style="max-width: 80%; line-height: 2;">Whether you need a simple, informative
+                <h2 class="about-title fw-bold mb-3 text-white">A Website that Fits Your Business</h2>
+                <h6 class="desc text-white" style="max-width: 80%; line-height: 2;">Whether you need a simple,
+                    informative
                     website or a more
                     complex
                     e-commerce platform, we can build, maintain, and secure a website that meets your requirements
